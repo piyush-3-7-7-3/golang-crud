@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "ca124a5b-33dd-43e0-b216-807419c020a0",
+		"name": "golang movies crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31366109",
+		"_collection_link": "https://winter-escape-880249.postman.co/workspace/My-Workspace~12783d2f-714a-4cbb-8085-c20f194ca3d7/collection/31366109-ca124a5b-33dd-43e0-b216-807419c020a0?action=share&source=collection_link&creator=31366109"
+	},
+	"item": [
+		{
+			"name": "Get All movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie by id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie by id Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"7\",\n    \"isbn\": \"1235121\",\n    \"title\": \"Seven\",\n    \"director\": {\n        \"firstname\": \"Piyush\",\n        \"lastname\": \"Go\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie by id Copy 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"39362300\",\n    \"isbn\": \"1235121\",\n    \"title\": \"Seven\",\n    \"director\": {\n        \"firstname\": \"Arnold\",\n        \"lastname\": \"Go\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/movies/39362300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						"39362300"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
